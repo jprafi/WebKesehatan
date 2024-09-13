@@ -23,9 +23,12 @@
                                 lakukan pemesanan obat yang anda butuhkan dan yang paling menarik anda dapat membuat pola diet anda.
                     </h3>
 
-                    <button type="button" class="text-white bg-sky-500 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center ">
-                        Konsultasi Sekarang
-                    </button>
+                    <a href="{{ route('konsultasi') }}">
+                        <button type="button" class="text-white bg-sky-500 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center ">
+                            Konsultasi Sekarang
+                        </button>
+                    </a>
+
                 </div>
                 <img class="h-screen bg-cover" src="{{ asset('img/dokterimg.png') }}" alt="Foto Dokter">
 

@@ -17,3 +17,7 @@ Route::get('/forgot-password', function () {
 Route::get('/signup', function () {
     return view('auth.signup');
 })->name('signup');
+
+Route::get('/konsultasi', function () {
+    return view('konsultasi');
+})->name('konsultasi');
