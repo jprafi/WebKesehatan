@@ -23,42 +23,42 @@
                     <div class="bg-white rounded-lg p-6 mb-6"> <!-- Menghapus shadow-lg -->
                         <img alt="Dr. Andy Hull" class="rounded-full mx-auto mb-4" height="150" src="https://storage.googleapis.com/a1aa/image/xVGflyiE5AQsOSF23Yk2FTlpQaNMqeL3lmDuCBtHVV0ZVdjTA.jpg" width="150"/>
                         <h3 class="text-xl font-bold">Dr. Andy Hull</h3>
-                        <p class="text-blue-500">Medicine</p>
+                        <p class="text-blue-500">Bedah</p>
                     </div>
                     <div class="bg-white rounded-lg p-6 mb-6"> <!-- Menghapus shadow-lg -->
                         <img alt="Dr. Ahmad Khan" class="rounded-full mx-auto mb-4" height="150" src="https://storage.googleapis.com/a1aa/image/7m9QEeEKiRUiJSqiUtJ5iiH5VfjwbXuphxLkxVtRaMObVdjTA.jpg" width="150"/>
                         <h3 class="text-xl font-bold">Dr. Ahmad Khan</h3>
-                        <p class="text-blue-500">Neurologist</p>
+                        <p class="text-blue-500">Anak</p>
                     </div>
                     <div class="bg-white rounded-lg p-6 mb-6"> <!-- Menghapus shadow-lg -->
                         <img alt="Dr. Heena Sachdeva" class="rounded-full mx-auto mb-4" height="150" src="https://storage.googleapis.com/a1aa/image/rzbXLuAu716OC9uo31Omu9dCzPCTGHsMLVhfSoM4azJuquxJA.jpg" width="150"/>
                         <h3 class="text-xl font-bold">Dr. Heena Sachdeva</h3>
-                        <p class="text-blue-500">Orthopaedics</p>
+                        <p class="text-blue-500">Kulit</p>
                     </div>
                     <div class="bg-white rounded-lg p-6 mb-6"> <!-- Menghapus shadow-lg -->
                         <img alt="Dr. Ankur Sharma" class="rounded-full mx-auto mb-4" height="150" src="https://storage.googleapis.com/a1aa/image/fO7e4CTKczmiS0eowmJJD3emrSf8Uftr9MzC74x4vfWCvquxJA.jpg" width="150"/>
                         <h3 class="text-xl font-bold">Dr. Ankur Sharma</h3>
-                        <p class="text-blue-500">Medicine</p>
+                        <p class="text-blue-500">Gigi</p>
                     </div>
                     <div class="bg-white rounded-lg p-6 mb-6"> <!-- Menghapus shadow-lg -->
                         <img alt="Dr. Emily Clark" class="rounded-full mx-auto mb-4" height="150" src="https://storage.googleapis.com/a1aa/image/ZSfoYfyYF2nnx0oDVrfTq6g4iEMefESM89LSgiLPJqpW5qbcC.jpg" width="150"/>
                         <h3 class="text-xl font-bold">Dr. Emily Clark</h3>
-                        <p class="text-blue-500">Pediatrics</p>
+                        <p class="text-blue-500">Penyakit Dalam</p>
                     </div>
                     <div class="bg-white rounded-lg p-6 mb-6"> <!-- Menghapus shadow-lg -->
                         <img alt="Dr. John Doe" class="rounded-full mx-auto mb-4" height="150" src="https://storage.googleapis.com/a1aa/image/cmkh9lRoAjqOHRHYBJRY5HoEJ1L8u2BCbyqfOd7MLNvmruxJA.jpg" width="150"/>
                         <h3 class="text-xl font-bold">Dr. John Doe</h3>
-                        <p class="text-blue-500">Cardiology</p>
+                        <p class="text-blue-500">Psikologi</p>
                     </div>
                     <div class="bg-white rounded-lg p-6 mb-6"> <!-- Menghapus shadow-lg -->
                         <img alt="Dr. Jane Smith" class="rounded-full mx-auto mb-4" height="150" src="https://storage.googleapis.com/a1aa/image/uBUPspJK555GP5BNVmahGQtn6zL65o85KyYVNLeGqzHmruxJA.jpg" width="150"/>
                         <h3 class="text-xl font-bold">Dr. Jane Smith</h3>
-                        <p class="text-blue-500">Dermatology</p>
+                        <p class="text-blue-500">Kartiologi</p>
                     </div>
                     <div class="bg-white rounded-lg p-6 mb-6"> <!-- Menghapus shadow-lg -->
                         <img alt="Dr. Michael Brown" class="rounded-full mx-auto mb-4" height="150" src="https://storage.googleapis.com/a1aa/image/HawpBBVDz14yOx9ziIeCLu69U5RRMvC2UPYgeu9xYOqPXdjTA.jpg" width="150"/>
                         <h3 class="text-xl font-bold">Dr. Michael Brown</h3>
-                        <p class="text-blue-500">Surgery</p>
+                        <p class="text-blue-500">Forensik</p>
                     </div>
                 </div>
             </div>
