@@ -7,22 +7,6 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <title>SehatPlus | Sign Up</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        .password-container {
-            position: relative;
-        }
-        .password-container input {
-            padding-right: 40px; /* space for the eye icon */
-        }
-        .password-container .fa-eye {
-            position: absolute;
-            right: 10px;
-            top: 50%;
-            transform: translateY(-50%);
-            cursor: pointer;
-            font-size: 1.25rem; /* adjust size as needed */
-        }
-    </style>
 </head>
 <body>
     @include('partial.nav')
@@ -36,15 +20,13 @@
                     <label for="username" class="block mb-2 text-sm font-medium text-gray-900">Email</label>
                     <input type="text" id="username" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-3" placeholder="name@flowbite.com" required />
                 </div>
-                <div class="mb-6 password-container">
+                <div class="mb-6">
                     <label for="password" class="block mb-2 text-sm font-medium text-gray-900">Password</label>
                     <input type="password" id="password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-3" required />
-                    <i class="fas fa-eye"></i>
                 </div>
-                <div class="mb-6 password-container">
+                <div class="mb-6">
                     <label for="confirm_password" class="block mb-2 text-sm font-medium text-gray-900">Confirm password</label>
                     <input type="password" id="confirm_password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-3" required />
-                    <i class="fas fa-eye"></i>
                 </div>
                 <div class="mt-6 flex items-center justify-between">
                     <div class="flex items-center">
@@ -58,20 +40,5 @@
             </form>
         </div>
     </div>
-
-    <script>
-        document.querySelectorAll('.fa-eye').forEach(icon => {
-            icon.addEventListener('click', function () {
-                const input = this.previousElementSibling;
-                if (input.type === 'password') {
-                    input.type = 'text';
-                    this.classList.replace('fa-eye', 'fa-eye-slash');
-                } else {
-                    input.type = 'password';
-                    this.classList.replace('fa-eye-slash', 'fa-eye');
-                }
-            });
-        });
-    </script>
 </body>
 </html>

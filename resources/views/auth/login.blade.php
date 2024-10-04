@@ -31,7 +31,7 @@
                     <a href="{{ route('forgot-password') }}" class="text-sm hover:text-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"> Forgot your password? </a>
                   </div>
                 <div class="mb-6">
-                    <button type="Login" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full px-6 py-3 my-2 text-center">Login</button>
+                    <button type="Login" class="text-white bg-sky-500 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full px-6 py-3 my-2 text-center">Login</button>
                 </div>
                 <div class="mt-6 text-center ">
                     <a href="{{ route('signup') }}" class=" hover:text-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300">Not a member yet? <span class="text-blue-600"> Sign up</span></a>
