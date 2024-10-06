@@ -15,17 +15,16 @@
 </head>
 <body>
     <section class="nav">
-        <nav class="bg-white border-gray-200 dark:bg-gray-900">
+        <nav class="bg-white border-gray-200">
             <div class="max-w-screen-xl flex items-center justify-between mx-auto py-2 px-4">
                 <!-- Flex container untuk logo dan teks -->
-                <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-                    <!-- Logo SehatPlus -->
+                <a href="{{ route('home') }}" class="flex items-center space-x-3 rtl:space-x-reverse">
                     <img src="{{ asset('img/logo.png') }}" class="h-16" alt="Logo website" />
-                    <!-- Nama SehatPlus -->
                     <span class="self-center text-4xl whitespace-nowrap font-extrabold font-poppins">
-                        <span class="text-sky-500">Sehat</span><span class="text-black">Plus</span> <!-- Membagi teks -->
+                        <span class="text-sky-500">Sehat</span><span class="text-black">Plus</span>
                     </span>
                 </a>
+
                 
                 <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
                     <span class="sr-only">Open main menu</span>
@@ -39,10 +38,10 @@
                             <a href="{{ route('home') }}" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0" aria-current="page">Home</a>
                         </li>                    
                         <li>
-                            <a href="{{ route('login') }}" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Konsultasi</a>
+                            <a href="{{ route('konsultasi1') }}" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Konsultasi</a>
                         </li>
                         <li>
-                            <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Pemesanan Obat</a>
+                            <a href="{{ route('pemesanan-obat') }}" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Pemesanan Obat</a>
                         </li>
                         <li>
                             <a href="{{ route('login') }}" class="text-white bg-sky-500 hover:bg-blue-800 focus:outline-none focus:ring-4 hover:bg-blue-800 font-medium rounded-full text-sm px-5 py-2.5 text-center inline-block">

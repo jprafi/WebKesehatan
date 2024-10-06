@@ -42,3 +42,7 @@ Route::get('/artikel', function () {
 Route::get('/doctor', function () {
     return view('auth.doctor');
 })->name('doctor');
+
+Route::get('/pemesanan-obat', function () {
+    return view('pemesanan-obat');  // This will return the view for ordering medicines
+})->name('pemesanan-obat');
