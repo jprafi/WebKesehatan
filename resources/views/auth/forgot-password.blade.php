@@ -23,7 +23,7 @@
                   <h1 class="block text-2xl font-medium text-gray-800 dark:text-white">Forgot password?</h1>
                   <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">
                     Remember your password?
-                    <a class="text-blue-600 decoration-2 hover:underline font-medium" href="{{ route('login') }}">
+                    <a class="text-sky-500 decoration-2 hover:underline font-medium" href="{{ route('login') }}">
                       Login here
                     </a>
                   </p>
@@ -39,7 +39,7 @@
                         </div>
                         <p class="hidden text-xs text-red-600 mt-2" id="email-error">Please include a valid email address so we can get back to you</p>
                       </div>
-                      <button type="submit" class="py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md border border-transparent font-semibold bg-blue-500 text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all text-sm dark:focus:ring-offset-gray-800">Reset password</button>
+                      <button type="submit" class="py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md border border-transparent font-semibold bg-sky-500 text-white hover:bg-sky-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all text-sm dark:focus:ring-offset-gray-800">Reset password</button>
                     </div>
                   </form>
                 </div>
