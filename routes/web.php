@@ -57,3 +57,5 @@ Route::get('/doctor', function () {
 Route::get('/pemesanan-obat', function () {
     return view('pemesanan-obat');  // This will return the view for ordering medicines
 })->name('pemesanan-obat');
+
+require __DIR__ . '/auth.php';
