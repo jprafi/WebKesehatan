@@ -15,18 +15,19 @@
     <div class="h-screen bg-sky-100 flex items-center justify-center">
         <div class="bg-white p-8 mx-5 rounded-lg shadow-lg w-full max-w-lg">
             <h2 class="text-center font-semibold text-3xl mb-8">Sign Up</h2>
-            <form>
+            <form method="POST" action="{{ route('register') }}">
+                @csrf
                 <div class="mb-6">
-                    <label for="username" class="block mb-2 text-sm font-medium text-gray-900">Email</label>
-                    <input type="text" id="username" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-3" placeholder="name@flowbite.com" required />
+                    <label for="email" class="block mb-2 text-sm font-medium text-gray-900">Email</label>
+                    <input name="email" type="text" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-3" placeholder="name@flowbite.com" required />
                 </div>
                 <div class="mb-6">
                     <label for="password" class="block mb-2 text-sm font-medium text-gray-900">Password</label>
-                    <input type="password" id="password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-3" required />
+                    <input name="password" type="password" id="password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-3" required />
                 </div>
                 <div class="mb-6">
                     <label for="confirm_password" class="block mb-2 text-sm font-medium text-gray-900">Confirm password</label>
-                    <input type="password" id="confirm_password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-3" required />
+                    <input name="password_confirmation" type="password" id="confirm_password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-3" required />
                 </div>
                 <div class="mt-6 flex items-center justify-between">
                     <div class="flex items-center">

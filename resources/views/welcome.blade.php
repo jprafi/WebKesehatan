@@ -9,7 +9,7 @@
 </head>
 <body>
     @include('partial.nav')
-    {{-- Home Start --}}
+    {{-- Dashboard Start --}}
     <section>
         <div id="home" class="h-screen bg-sky-100">
             <div class="flex">
@@ -35,6 +35,6 @@
             </div>
         </div>
     </section>
-    {{-- Home End --}}
+    {{-- Dashboard End --}}
 </body>
 </html>
