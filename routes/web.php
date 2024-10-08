@@ -53,6 +53,11 @@ Route::get('/konsultasi3', function () {
     return view('konsultasi3');
 })->name('konsultasi3');
 
+Route::get('/konsultasi4', function () {
+    return view('konsultasi4');
+})->name('konsultasi4');
+
+
 Route::get('/artikel', function () {
     return view('auth.artikel');
 })->name('artikel');
@@ -63,24 +68,21 @@ Route::get('/doctor', function () {
 })->name('doctor');
 
 Route::get('/pemesanan-obat', function () {
-    return view('pemesanan-obat');  // This will return the view for ordering medicines
+    return view('pemesanan-obat');
 })->name('pemesanan-obat');
 
 
 Route::get('/pemesanan-obat-1', function () {
-    return view('pemesanan-obat1');  // This will return the view for ordering medicines
+    return view('pemesanan-obat1');
 })->name('pemesanan-obat-1');
 
-Route::get('/pemesanan-obat-2', function () {
-    return view('pemesanan-obat2');  // This will return the view for ordering medicines
-})->name('pemesanan-obat-2');
 
 Route::get('/payment-page-1', function () {
-    return view('payment-page1');  // This will return the view for ordering medicines
+    return view('payment-page1');
 })->name('payment-page-1');
 
 Route::get('/payment-page-2', function () {
-    return view('payment-page2');  // This will return the view for ordering medicines
+    return view('payment-page2'); 
 })->name('payment-page-2');
 
 

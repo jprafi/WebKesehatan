@@ -14,7 +14,7 @@
     <section class="flex justify-center items-center h-screen p-5">
         <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-lg">
             <h2 class="text-2xl font-bold text-center mb-6">Konsultasi</h2>
-            
+
         <!-- Progress Steps -->
         <div class="flex justify-between items-center mb-8">
             <div class="flex items-center">
@@ -37,13 +37,13 @@
             </div>
         </div>
 
-            
+
         <!-- Form Step 3 (Data Diri) -->
-        <form action="#">
+        <form action="{{ route('konsultasi4') }}">
             <div class="mb-4 text">
                 <label for="tanggal" class="block text-gray-700 font-bold">Tanggal </label>
                 <input type="date" id="data" name="date" class="w-full p-2 border border-gray-400 rounded-md text-xs" placeholder="Masukkan Tanggal Konsultasi" required>
-            </div>            
+            </div>
             <div class="mb-9">
                 <label for="penjelasan" class="block text-gray-700 font-bold">Penjelasan</label>
                 <textarea type="text" id="penjelasan" name="penjelasan" class="w-full p-2 border border-gray-400 rounded-md text-xs" placeholder="Masukkan Penjelasan" required></textarea>
@@ -57,8 +57,8 @@
                 <button type="submit" class="text-white bg-blue-500 hover:bg-blue-700 rounded-lg px-5 py-2.5">
                     Selesai
                 </button>
-            </div>            
-            </div>            
+            </div>
+            </div>
         </form>
         </div>
     </section>

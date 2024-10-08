@@ -7,20 +7,20 @@
     <title>SehatPlus | Pemesanan Obat</title>
     <script src="https://cdn.tailwindcss.com"></script> <!-- Menggunakan Tailwind dari CDN -->
 </head>
-<body class="bg-blue-50 min-h-screen">
+<body class="bg-sky-50 min-h-screen">
 
-        @include('partial.nav')
+    @include('partial.nav')
 
     <!-- Main Content -->
-    <main class="flex items-center justify-center min-h-screen mt-6">
+    <main class="flex items-center justify-center min-h-screen mb-6">
         <div class="bg-white p-10 rounded-lg shadow-lg text-center">
             <div class="flex justify-center mb-4">
                 <div class="bg-green-200 rounded-full p-4">
                     <i class="fas fa-check text-green-600 text-4xl"></i>
                 </div>
             </div>
-            <h1 class="text-xl font-semibold mb-4">Pembayaran Sudah Dikonfirmasi</h1>
-            <button class="bg-blue-500 text-white px-6 py-2 rounded-lg">SELESAI</button>
+            <h1 class="text-xl font-semibold mb-6">Pembayaran Sudah Dikonfirmasi</h1>
+            <button class="bg-sky-500 text-white px-6 py-2 rounded-lg hover:bg-sky-600 transition duration-300">SELESAI</button>
         </div>
     </main>
 
