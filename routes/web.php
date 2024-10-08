@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\MedicineController;
 use App\Http\Controllers\ProfileController;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/dashboard', function () {
@@ -43,13 +44,19 @@ Route::get('/home-login', function () {
     return view('auth.home-login');
 })->name('home-login');
 
-Route::get('/konsultasi2', function () {
+Route::get('/konsultasi2', function (Request $req) {
+    dd($req->input());
     return view('konsultasi2');
 })->name('konsultasi2');
 
 Route::get('/konsultasi3', function () {
     return view('konsultasi3');
 })->name('konsultasi3');
+
+Route::get('/konsultasi4', function () {
+    return view('konsultasi4');
+})->name('konsultasi4');
+
 
 Route::get('/artikel', function () {
     return view('auth.artikel');
@@ -61,24 +68,21 @@ Route::get('/doctor', function () {
 })->name('doctor');
 
 Route::get('/pemesanan-obat', function () {
-    return view('pemesanan-obat');  // This will return the view for ordering medicines
+    return view('pemesanan-obat');
 })->name('pemesanan-obat');
 
 
 Route::get('/pemesanan-obat-1', function () {
-    return view('pemesanan-obat1');  // This will return the view for ordering medicines
+    return view('pemesanan-obat1');
 })->name('pemesanan-obat-1');
 
-Route::get('/pemesanan-obat-2', function () {
-    return view('pemesanan-obat2');  // This will return the view for ordering medicines
-})->name('pemesanan-obat-2');
 
 Route::get('/payment-page-1', function () {
-    return view('payment-page1');  // This will return the view for ordering medicines
+    return view('payment-page1');
 })->name('payment-page-1');
 
 Route::get('/payment-page-2', function () {
-    return view('payment-page2');  // This will return the view for ordering medicines
+    return view('payment-page2'); 
 })->name('payment-page-2');
 
 Route::get('/pemesanan-obat', [MedicineController::class, 'index'])->name('pemesanan-obat');
