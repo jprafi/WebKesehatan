@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\User;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -11,16 +12,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('consuls', function (Blueprint $table) {
+        Schema::create('patients', function (Blueprint $table) {
             $table->id();
-            $table->string('patient_name');
-            $table->integer('phone');
+            $table->string('name');
+            $table->string('sympthoms');
             $table->string('address');
-            $table->string('sympthom');
-            $table->date('startdate');
-            $table->longText('sympthom');
-            $table->date('dateconsul');
-            $table->string('ID_consul');
+            $table->foreignIdFor(User::class)->constrained()->cascadeOnDelete();
             $table->timestamps();
         });
     }
@@ -30,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('consuls');
+        Schema::dropIfExists('patients');
     }
 };
