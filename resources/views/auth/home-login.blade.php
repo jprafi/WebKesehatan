@@ -16,6 +16,7 @@
     <section>
         <div id="home" class="h-screen bg-sky-100">
             <div class="flex flex-col md:flex-row justify-between">
+                @if(auth()->user()->role == 'user')
                 <!-- Bagian teks -->
                 <div class="head px-8 md:px-16 mt-24 md:mt-44 space-y-5">
                     <h1 class="flex flex-col text-4xl md:text-8xl text-left justify-center font-bold">
@@ -33,6 +34,9 @@
                         </button>
                     </a>
                 </div>
+                @else
+                Admin
+                @endif
 
                 <!-- Bagian tombol (Our Doctor dan Artikel) -->
                 <div class="flex flex-col md:flex-row items-center justify-center px-8 md:px-24 py-12 mt-16 md:mt-44 space-y-8 md:space-y-0 md:space-x-12">

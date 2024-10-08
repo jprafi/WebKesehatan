@@ -1,6 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
+
+use App\Models\Medicine;
 use Illuminate\Http\Request;
 use App\Models\Obat; // Import the model for your products
 
@@ -12,11 +14,11 @@ class SearchController extends Controller
 
         // If there is a query, search in the Obat model
         if ($query) {
-            $obats = Obat::where('name', 'like', "%{$query}%") // Adjust the column name as needed
+            $obats = Medicine::where('name', 'like', "%{$query}%") // Adjust the column name as needed
                 ->orWhere('description', 'like', "%{$query}%") // Optionally search in the description or other columns
                 ->get();
         } else {
-            $obats = Obat::all(); // If no query is entered, return all products
+            $obats = medicine::all(); // If no query is entered, return all products
         }
 
         // Return the search results to the view
