@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\MedicineController;
 use App\Http\Controllers\ProfileController;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/dashboard', function () {
@@ -43,7 +44,8 @@ Route::get('/home-login', function () {
     return view('auth.home-login');
 })->name('home-login');
 
-Route::get('/konsultasi2', function () {
+Route::get('/konsultasi2', function (Request $req) {
+    dd($req->input());
     return view('konsultasi2');
 })->name('konsultasi2');
 

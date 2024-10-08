@@ -18,7 +18,7 @@ return new class extends Migration
             $table->integer('count');
             $table->string('code');
             $table->longText('description');
-            $table->string('pic_url');
+            $table->string('IMG_url');
             $table->timestamps();
         });
     }
