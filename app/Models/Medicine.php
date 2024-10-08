@@ -1,13 +1,14 @@
 <?php
 
+// app/Models/Medicine.php
+
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class Medicine extends Model
 {
-    use HasFactory;
+    protected $table = 'medicine';
 
     protected $fillable = [
         'name',
@@ -15,6 +16,6 @@ class Medicine extends Model
         'count',
         'code',
         'description',
-        'pic_url',
+        'IMG_url',
     ];
 }

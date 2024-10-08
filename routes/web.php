@@ -81,11 +81,10 @@ Route::get('/payment-page-2', function () {
     return view('payment-page2');  // This will return the view for ordering medicines
 })->name('payment-page-2');
 
+Route::get('/pemesanan-obat', [MedicineController::class, 'index'])->name('pemesanan-obat');
+Route::get('/pemesanan-obat-2/{id}', [MedicineController::class, 'pemesananObat2'])->name('pemesanan-obat-2');
 
-//=======
-Route::get('medicine', [MedicineController::class, 'index']);
-
-Route::get('/search', [SearchController::class, 'index'])->name('search.index');
+Route::get('/pemesanan-obat', [MedicineController::class, 'index'])->name('pemesanan-obat');
 
 require __DIR__ . '/auth.php';
 //>>>>>>> 77af0f320f280a5db5c32cf7ffdcc19d2743eefa
