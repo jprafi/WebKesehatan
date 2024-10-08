@@ -46,3 +46,21 @@ Route::get('/doctor', function () {
 Route::get('/pemesanan-obat', function () {
     return view('pemesanan-obat');  // This will return the view for ordering medicines
 })->name('pemesanan-obat');
+
+Route::get('/pemesanan-obat-1', function () {
+    return view('pemesanan-obat1');  // This will return the view for ordering medicines
+})->name('pemesanan-obat-1');
+
+Route::get('/pemesanan-obat-2', function () {
+    return view('pemesanan-obat2');  // This will return the view for ordering medicines
+})->name('pemesanan-obat-2');
+
+Route::get('/payment-page-1', function () {
+    return view('payment-page1');  // This will return the view for ordering medicines
+})->name('payment-page-1');
+
+Route::get('/payment-page-2', function () {
+    return view('payment-page2');  // This will return the view for ordering medicines
+})->name('payment-page-2');
+
+
