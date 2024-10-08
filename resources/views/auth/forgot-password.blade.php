@@ -30,7 +30,8 @@
                 </div>
 
                 <div class="mt-5">
-                  <form>
+                    <form method="POST" action="{{ route('password.email') }}">
+                        @csrf
                     <div class="grid gap-y-4">
                       <div>
                         <label for="email" class="block text-sm font-bold ml-1 mb-2 dark:text-white">Email address</label>

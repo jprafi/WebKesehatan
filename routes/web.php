@@ -1,6 +1,23 @@
 <?php
 
+use App\Http\Controllers\MedicineController;
+use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::middleware('auth')->group(function () {
+    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+});
+
+Route::controller(MedicineController::class)->group(function () {
+    Route::get('medicine', 'index')->name('medicine.index');
+});
+
 
 Route::get('/', function () {
     return view('welcome');
@@ -47,6 +64,7 @@ Route::get('/pemesanan-obat', function () {
     return view('pemesanan-obat');  // This will return the view for ordering medicines
 })->name('pemesanan-obat');
 
+<<<<<<< HEAD
 Route::get('/pemesanan-obat-1', function () {
     return view('pemesanan-obat1');  // This will return the view for ordering medicines
 })->name('pemesanan-obat-1');
@@ -64,3 +82,10 @@ Route::get('/payment-page-2', function () {
 })->name('payment-page-2');
 
 
+=======
+// Route::get('medicine', [MedicineController::class, 'index']);
+
+// Route::get('/search', [SearchController::class, 'index'])->name('search.index');
+
+require __DIR__ . '/auth.php';
+>>>>>>> 77af0f320f280a5db5c32cf7ffdcc19d2743eefa
