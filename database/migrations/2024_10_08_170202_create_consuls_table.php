@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('address');
             $table->string('sympthom');
             $table->date('startdate');
-            $table->longText('sympthom');
+            // $table->longText('sympthom');
             $table->date('dateconsul');
             $table->string('ID_consul');
             $table->timestamps();
