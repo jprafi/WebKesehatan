@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" type="image/x-icon" href="img/icon.jpg">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>SehatPlus | Pemesanan Obat</title>
+    <title>SehatPlus | payment-page-2</title>
     <script src="https://cdn.tailwindcss.com"></script> <!-- Menggunakan Tailwind dari CDN -->
 </head>
-<body class="bg-sky-50 min-h-screen">
+<body class="bg-sky-100 min-h-screen">
 
     @include('partial.nav')
 
@@ -19,6 +20,7 @@
                     <i class="fas fa-check text-green-600 text-4xl"></i>
                 </div>
             </div>
+            <a href="{{ route('home-login') }}">
             <h1 class="text-xl font-semibold mb-6">Pembayaran Sudah Dikonfirmasi</h1>
             <button class="bg-sky-500 text-white px-6 py-2 rounded-lg hover:bg-sky-600 transition duration-300">SELESAI</button>
         </div>

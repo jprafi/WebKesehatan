@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" type="image/x-icon" href="img/icon.jpg">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -30,7 +31,7 @@
                         <button type="button" class="text-white bg-sky-500 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mt-6">
                             Konsultasi Sekarang
                         </button>
-                    </a>                
+                    </a>
                 </div>
 
                 <!-- Bagian tombol (Our Doctor dan Artikel) -->
@@ -39,14 +40,14 @@
                     <a href="{{ route('doctor') }}">
                     <button type="button" class="flex flex-col items-center justify-center bg-white hover:bg-blue-800 text-sky-500 font-medium w-40 md:w-60 h-32 md:h-40 rounded-lg focus:outline-none focus:ring-4 focus:ring-blue-300 shadow-xl">
                         <i class="fas fa-user-md text-5xl md:text-8xl mb-3"></i>
-                        <span class="text-gray-500 text-lg font-bold">Our Doctor</span> 
+                        <span class="text-gray-500 text-lg font-bold">Our Doctor</span>
                     </button>
-                    
+
                     <!-- Tombol Artikel -->
                     <a href="{{ route('artikel') }}">
                         <button type="button" class="flex flex-col items-center justify-center bg-white hover:bg-blue-800 text-sky-500 font-medium w-40 md:w-60 h-32 md:h-40 rounded-lg focus:outline-none focus:ring-4 focus:ring-blue-300 shadow-xl">
                             <i class="fas fa-newspaper text-5xl md:text-8xl mb-3"></i>
-                            <span class="text-gray-500 text-lg font-bold">Artikel</span> 
+                            <span class="text-gray-500 text-lg font-bold">Artikel</span>
                         </button>
                     </a>
                 </div>

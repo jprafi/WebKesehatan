@@ -80,9 +80,8 @@ Route::get('/payment-page-1', function () {
 })->name('payment-page-1');
 
 Route::get('/payment-page-2', function () {
-    return view('payment-page2'); 
+    return view('payment-page2');
 })->name('payment-page-2');
-
 
 //=======
 Route::get('medicine', [MedicineController::class, 'index']);

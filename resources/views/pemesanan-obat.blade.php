@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" type="image/x-icon" href="img/icon.jpg">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -14,7 +15,7 @@
     <section class="bg-sky-100 py-16">
         <div class="container mx-auto">
             <h2 class="text-4xl font-bold text-center text-gray-800 mb-8">Pemesanan Obat</h2>
-            
+
             <!-- Menambahkan Foto Dokter -->
             <div class="flex justify-center mb-8">
                 <img src="{{ asset('img/dokterimg.png') }}" alt="Foto Dokter" class="w-48 h-48 object-cover rounded-full shadow-lg">
@@ -27,7 +28,7 @@
                     Cari
                 </button>
             </div>
-            
+
             <!-- Grid Layout Produk -->
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Kotak Produk -->
@@ -40,7 +41,7 @@
                     </button>
                 </div>
 
-                
+
                 <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
                     <img src="{{ asset('img/ibuprofen.png') }}" alt="Obat 2" class="w-1/2 h-40 object-cover mb-4 rounded-lg mx-auto">
                     <h3 class="text-xl font-semibold text-gray-800">Ibuprofen</h3>
@@ -49,7 +50,7 @@
                         Pesan Sekarang
                     </button>
                 </div>
-                
+
                 <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
                     <img src="{{ asset('img/antibiotik.png') }}" alt="Obat 3" class="w-1/2 h-40 object-cover mb-4 rounded-lg mx-auto">
                     <h3 class="text-xl font-semibold text-gray-800">Antibiotik</h3>

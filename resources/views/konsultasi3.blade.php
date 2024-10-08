@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" type="image/x-icon" href="img/icon.jpg">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Konsultasi Page Step 2</title>
     @vite(['resources/css/app.css','resources/js/app.js'])
+    <title>SehatPlus | Konsultasi3</title>
 </head>
 <body class="bg-sky-100">
     @include('partial.nav') <!-- Navigation Bar -->
@@ -21,7 +22,7 @@
                 <div class="rounded-full bg-gray-300 text-white w-8 h-8 flex items-center justify-center aspect-square">
                     <span>1</span>
                 </div>
-                <span class="ml-2 font-semibold">Data Diri</span>
+                <span class="ml-2 text-gray-600 ">Data Diri</span>
             </div>
             <div class="flex items-center">
                 <div class="rounded-full bg-gray-300 text-white w-8 h-8 flex items-center justify-center aspect-square">
@@ -33,7 +34,7 @@
                 <div class="rounded-full bg-blue-500 text-white w-8 h-8 flex items-center justify-center aspect-square">
                     <span>3</span>
                 </div>
-                <span class="ml-2 text-gray-600">Tanggal Konsultasi</span>
+                <span class="ml-2 text-gray-600 font-semibold">Tanggal Konsultasi</span>
             </div>
         </div>
 
