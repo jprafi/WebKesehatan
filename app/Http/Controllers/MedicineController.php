@@ -4,17 +4,23 @@ namespace App\Http\Controllers;
 
 use App\Models\Medicine;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+
 
 class MedicineController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
+ 
     public function index()
     {
-        $medicine=Medicine::all();
-        dd($medicine);
-        return view('medicine.index',compact('medicine'));
+        $medicine = Medicine::all();
+        return view('pemesanan-obat', compact('medicine'));
+    }
+
+    public function pemesananObat2($id)
+    {
+        $medicine = Medicine::find($id);
+        $total = $medicine->price;
+        return view('pemesanan-obat-2', compact('medicine', 'total'));
     }
 
     /**
@@ -30,14 +36,15 @@ class MedicineController extends Controller
      */
     public function store(Request $request)
     {
-        //
-        $request->validate(
-            [
-                'name'
-            ]
-        );
+        $request->validate([
+            'name' => 'required',
+            'price' => 'required',
+            'count' => 'required',
+            'code' => 'required',
+            'description' => 'required',
+            'IMG_url' => 'required',
+        ]);
     }
-
     /**
      * Display the specified resource.
      */
