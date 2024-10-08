@@ -16,6 +16,7 @@ return new class extends Migration
     {
         Schema::create('consultations', function (Blueprint $table) {
             $table->id();
+            $table->string('sympthom');
             $table->date('startdate');
             $table->longText('desc');
             $table->date('dateconsul');
