@@ -42,7 +42,8 @@
 
 
         <!-- Form Step 1 (Data Diri) -->
-        <form action="{{ route('konsultasi2') }}">
+        <form action="{{ route('konsultasi2') }}" method="POST">
+            @csrf
             <div class="mb-4 text">
                 <label for="Nama" class="block text-gray-700 font-bold">Nama </label>
                 <input type="text" id="nama" name="nama" class="w-full p-2 border border-gray-400 rounded-md text-xs" placeholder="Masukkan Nama Anda Disini" required>

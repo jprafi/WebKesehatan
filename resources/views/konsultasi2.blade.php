@@ -42,7 +42,8 @@
 
 
         <!-- Form Step 1 (Data Diri) -->
-        <form action="{{ route('konsultasi3') }}">
+        <form action="{{ route('konsultasi3') }}" method="POST">
+            @csrf
             <div class="mb-4 text">
                 <label for="gejala" class="block text-gray-700 font-bold">Gejala </label>
                 <input type="text" id="gejala" name="gejala" class="w-full p-2 border border-gray-400 rounded-md text-xs" placeholder="Masukkan Gejala Anda Disini" required>

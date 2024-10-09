@@ -40,7 +40,8 @@
 
 
         <!-- Form Step 3 (Data Diri) -->
-        <form action="{{ route('konsultasi4') }}">
+        <form action="{{ route('konsultasi4') }}" method="GET">
+            @csrf
             <div class="mb-4 text">
                 <label for="tanggal" class="block text-gray-700 font-bold">Tanggal </label>
                 <input type="date" id="data" name="date" class="w-full p-2 border border-gray-400 rounded-md text-xs" placeholder="Masukkan Tanggal Konsultasi" required>

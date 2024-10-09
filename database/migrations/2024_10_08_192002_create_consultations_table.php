@@ -16,10 +16,14 @@ return new class extends Migration
     {
         Schema::create('consultations', function (Blueprint $table) {
             $table->id();
-            $table->string('sympthom');
-            $table->date('startdate');
-            $table->longText('desc');
-            $table->date('dateconsul');
+            $table->string('nama');
+            $table->string('nomor_hp');
+            $table->string('alamat');
+            $table->string('gejala');
+            $table->date('tanggal_gejala');
+            $table->longText('keluhan');
+            $table->date('tanggal_keluhan');
+            $table->longText('penjelasan');
             $table->foreignIdFor(Patient::class)->constrained()->cascadeOnDelete();
             $table->foreignIdFor(Doctor::class)->constrained()->cascadeOnDelete();
             $table->timestamps();

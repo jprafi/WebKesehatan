@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ConsultationController;
 use App\Http\Controllers\MedicineController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Http\Request;
@@ -36,27 +37,17 @@ Route::get('/signup', function () {
     return view('auth.signup');
 })->name('signup');
 
-Route::get('/konsultasi1', function () {
-    return view('konsultasi1');
-})->name('konsultasi1');
+Route::post('/konsultasi1', [ConsultationController::class, 'konsultasi1'])->name('konsultasi1');
 
 Route::get('/home-login', function () {
     return view('auth.home-login');
 })->name('home-login');
 
-Route::get('/konsultasi2', function (Request $req) {
-    dd($req->input());
-    return view('konsultasi2');
-})->name('konsultasi2');
+Route::post('/konsultasi2', [ConsultationController::class, 'konsultasi2'])->name('konsultasi2');
 
-Route::get('/konsultasi3', function () {
-    return view('konsultasi3');
-})->name('konsultasi3');
+Route::get('/konsultasi3/{id}', [ConsultationController::class, 'konsultasi3'])->name('konsultasi3');
 
-Route::get('/konsultasi4', function () {
-    return view('konsultasi4');
-})->name('konsultasi4');
-
+Route::get('/konsultasi4/{id}', [ConsultationController::class, 'konsultasi4'])->name('konsultasi4');
 
 Route::get('/artikel', function () {
     return view('auth.artikel');
